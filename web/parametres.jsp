@@ -92,20 +92,22 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Valider</button>
+            <br>
+            <button type="submit" class="btn btn-primary" style="margin-left: 75%;">Valider</button>
         </form>
         <br><hr style="position: relative; width: 96%; height: 3px; background-color: lightslategrey; margin-left: 2%;"><br>
         <table class="table" style="position: relative; width: 96%; margin-left: 2%;">
             <thead>
                 <tr class="table-active">
                     <th scope="col" style="font-size: 1.12em;"></th>
+                    <th scope="col" style="font-size: 1.12em;"></th>
                     <th scope="col" style="font-size: 1.12em;">Noms</th>
                     <th scope="col" style="font-size: 1.12em;">Prénoms</th>
                     <th scope="col" style="font-size: 1.12em;">Adresse email</th>
-                    <th scope="col" style="font-size: 1.12em;">Droit au service achat</th>
-                    <th scope="col" style="font-size: 1.12em;">Droit à l'ajout</th>
-                    <th scope="col" style="font-size: 1.12em;">Droit au service comptable</th>
-                    <th scope="col" style="font-size: 1.12em;">Droit au service de vente</th>
+                    <th scope="col" style="font-size: 1.12em;">Droit Achat</th>
+                    <th scope="col" style="font-size: 1.12em;">Droit Magasin</th>
+                    <th scope="col" style="font-size: 1.12em;">Droit Comptabilité</th>
+                    <th scope="col" style="font-size: 1.12em;">Droit Vente</th>
                 </tr>
             </thead>
             <tbody>
@@ -115,12 +117,17 @@
                             <i class="fa fa-times"></i>
                         </a>
                     </td>
+                    <td>
+                        <a style="color: blue;">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                    </td>
                     <td>Nom du personnel</td>  
                     <td>Prénom du personnel</td>
                     <td>Adresse du personnel</td>
                     <td>
                         <div class="custom-control custom-radio" style="text-align: center;">
-                            <input class="custom-control-input" type="radio" name="droit1" id="checkAchat" value="achat">
+                            <input class="custom-control-input" type="radio" name="droit1" id="checkAchat" value="achat" disabled="disabled">
                             <label class="custom-control-label" for="checkAchat">
                                 Oui
                             </label>
@@ -128,7 +135,7 @@
                     </td>
                     <td>
                         <div class="custom-control custom-radio" style="text-align: center;">
-                            <input class="custom-control-input" type="radio" name="droit1" id="checkAjout" value="ajout" checked>
+                            <input class="custom-control-input" type="radio" name="droit1" id="checkAjout" value="ajout" checked disabled="disabled">
                             <label class="custom-control-label" for="checkAjout">
                                 Oui
                             </label>
@@ -136,7 +143,7 @@
                     </td>
                     <td>
                         <div class="custom-control custom-radio" style="text-align: center;">
-                            <input class="custom-control-input" type="radio" name="droit1" id="checkComptable" value="comptable">
+                            <input class="custom-control-input" type="radio" name="droit1" id="checkComptable" value="comptable" disabled="disabled">
                             <label class="custom-control-label" for="checkComptable">
                                 Oui
                             </label>
@@ -144,7 +151,7 @@
                     </td>
                     <td>
                         <div class="custom-control custom-radio" style="text-align: center;">
-                            <input class="custom-control-input" type="radio" name="droit1" id="checkVente" value="vente">
+                            <input class="custom-control-input" type="radio" name="droit1" id="checkVente" value="vente" disabled="disabled">
                             <label class="custom-control-label" for="checkVente">
                                 Oui
                             </label>
@@ -157,12 +164,17 @@
                             <i class="fa fa-times"></i>
                         </a>
                     </td>
+                    <td>
+                        <a style="color: blue;">
+                            <i class="fa fa-edit"></i>
+                        </a>
+                    </td>
                     <td>Nom du personnel</td>  
                     <td>Prénom du personnel</td>
                     <td>Adresse du personnel</td>
                     <td>
                         <div class="custom-control custom-radio" style="text-align: center;">
-                            <input class="custom-control-input" type="radio" name="droit2" id="checkAchat1" value="achat">
+                            <input class="custom-control-input" type="radio" name="droit2" id="checkAchat1" value="achat" disabled="disabled">
                             <label class="custom-control-label" for="checkAchat1">
                                 Oui
                             </label>
@@ -170,7 +182,7 @@
                     </td>
                     <td>
                         <div class="custom-control custom-radio" style="text-align: center;">
-                            <input class="custom-control-input" type="radio" name="droit2" id="checkAjout1" value="ajout" checked>
+                            <input class="custom-control-input" type="radio" name="droit2" id="checkAjout1" value="ajout" checked disabled="disabled">
                             <label class="custom-control-label" for="checkAjout1">
                                 Oui
                             </label>
@@ -178,7 +190,7 @@
                     </td>
                     <td>
                         <div class="custom-control custom-radio" style="text-align: center;">
-                            <input class="custom-control-input" type="radio" name="droit2" id="checkComptable1" value="comptable">
+                            <input class="custom-control-input" type="radio" name="droit2" id="checkComptable1" value="comptable" disabled="disabled">
                             <label class="custom-control-label" for="checkComptable1">
                                 Oui
                             </label>
@@ -186,7 +198,7 @@
                     </td>
                     <td>
                         <div class="custom-control custom-radio" style="text-align: center;">
-                            <input class="custom-control-input" type="radio" name="droit2" id="checkVente1" value="vente">
+                            <input class="custom-control-input" type="radio" name="droit2" id="checkVente1" value="vente" disabled="disabled">
                             <label class="custom-control-label" for="checkVente1">
                                 Oui
                             </label>
@@ -198,14 +210,80 @@
         <table class="table" style="position: relative; width: 96%; margin-left: 2%; margin-right: 2%;">
             <thead>
                 <tr class="table-active">
-                    <th scope="col"><a href="produits.jsp">
+                    <th scope="col"><a id="add" name="add" onclick="return addPersonnel();">
                             <i class="fa fa-plus fa-2x"></i>
                         </a></th>
                     <th scope="col" style="font-size: 1.3em;">Ajouter un nouvel personnel</th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;"></th>
+                    <th scope="col" style="font-size: 1.3em;">Modifier mes informations</th>
+                    <th scope="col"><a id="update" name="update" onclick="return update();">
+                            <i class="fa fa-edit fa-2x"></i>
+                        </a></th>
                 </tr>
             </thead>
         </table>
-        <br><hr style="position: relative; width: 96%; height: 3px; background-color: lightslategrey; margin-left: 2%;"><br>
+        <br>
+        <div id="personnel" name="personnel">
+        </div>
+        
+        <hr style="position: relative; width: 96%; height: 3px; background-color: lightslategrey; margin-left: 2%;"><br>
+        
+        <script>
+            function dynamic() {
+                return '<di><p style="text-align: center; font-family: verdana; font-size: 2em;">Un nouvel personnel</p><form style="position: relative; width: 60%; margin-left: 22.4%;"><div class="card-deck"><div class="form-group" style="position: relative; width: 43%;"><label for="nom" style="font-size: 1.3em;">Noms<strong style="color: red;"> *</strong></label><input type="text" class="form-control" id="nom" name="nom" required><div class="valid-feedback">Looks good!</div></div><div class="form-group" style="position: relative; margin-left: 8%; width: 43%;"><label for="prenom" style="font-size: 1.3em;">Prénoms<strong style="color: red;"> *</strong></label><input type="text" class="form-control" id="prenom" name="prenom"><div class="valid-feedback">Looks good!</div></div></div><div class="card-deck"><div class="form-group" style="position: relative; margin-right: 8%; width: 43%;"><label for="droit" style="font-size: 1.3em;">Droit du personnel<strong style="color: red;"> *</strong></label><select class="custom-select" id="droit"><option value="droit" disabled selected>Droit</option><option value="Achat">Achat</option><option value="Comptabilite">Comptabilité</option><option value="Magasin">Magasin</option><option value="Vente">Vente</option></select></div><div class="form-group" style="position: relative; width: 43%;"><label for="email" style="font-size: 1.3em;">Adresse email<strong style="color: red;"> *</strong></label><input type="email" class="form-control" id="email" name="email" placeholder="ex: monsite@gmail.com" required><div class="valid-feedback">Looks good!</div></div></div><br><div style="margin-left: 58%;"><button type="submit" class="btn btn-primary">Enregistrer</button><button type="submit" class="btn btn-primary" id="remove" name="remove" onclick="removePersonnel(this);">Ignorer</button></div></form></di><br>';
+            }
+            
+            function addPersonnel() {
+                var div = document.createElement('DIV');
+                div.innerHTML = dynamic();
+                document.getElementById("personnel").appendChild(div);
+            }
+            
+            function removePersonnel(div) {
+                document.getElementById("personnel").removeChild(div.parentNode.parentNode.parentNode.parentNode);
+            }
+        </script>
+        
+        <script>
+            function dynamicUpdate() {
+                return '<di><p style="text-align: center; font-family: verdana; font-size: 2em;">Mes informations</p><form style="position: relative; width: 60%; margin-left: 22.4%;"><div class="card-deck"><div class="form-group" style="position: relative; width: 43%;"><label for="nom" style="font-size: 1.3em;">Noms<strong style="color: red;"> *</strong></label><input type="text" class="form-control" id="nom" name="nom" required><div class="valid-feedback">Looks good!</div></div><div class="form-group" style="position: relative; margin-left: 8%; width: 43%;"><label for="prenom" style="font-size: 1.3em;">Prénoms<strong style="color: red;"> *</strong></label><input type="text" class="form-control" id="prenom" name="prenom"><div class="valid-feedback">Looks good!</div></div></div><div class="card-deck"><div class="form-group" style="position: relative; width: 43%;"><label for="email" style="font-size: 1.3em;">Adresse email<strong style="color: red;"> *</strong></label><input type="email" class="form-control" id="email" name="email" placeholder="ex: monsite@gmail.com" required><div class="valid-feedback">Looks good!</div></div></div><br><div style="margin-left: 58%;"><button type="submit" class="btn btn-primary">Enregistrer</button><button type="submit" class="btn btn-primary" id="remove" name="remove" onclick="removePersonnel(this);">Ignorer</button></div></form></di><br>';
+            }
+            
+            function update() {
+                var div = document.createElement('DIV');
+                div.innerHTML = dynamicUpdate();
+                document.getElementById("personnel").appendChild(div);
+            }
+            
+            function remove(div) {
+                document.getElementById("personnel").removeChild(div.parentNode.parentNode.parentNode.parentNode);
+            }
+        </script>
         
         <!-- Importation du fichier footer.jsp -->
         <jsp:include page="footer.jsp"></jsp:include>

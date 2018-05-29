@@ -69,30 +69,6 @@
                         Looks good!
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="prix" style="font-size: 1.3em;">Promo<strong style="color: red;"> *</strong></label>
-                    <br>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="oui" name="promo" class="custom-control-input">
-                        <label class="custom-control-label" for="oui">Oui</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="non" name="promo" class="custom-control-input" checked="checked">
-                        <label class="custom-control-label" for="non">Non</label>
-                    </div>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-            </div>
-            <div class="card-deck">
-                <div class="form-group" style="position: relative; margin-right: 25%;">
-                    <label for="nouveauPrix" style="font-size: 1.3em;">Nouveau prix<strong style="color: red;"> *</strong></label>
-                    <input type="text" class="form-control active" id=nouveauPrix" style="position: relative; width: 170%;" required="required" disabled="disabled">
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
             </div>
             <div style="position: relative; margin-left: 77%;">
                 <button type="submit" name="submit" class="btn btn-primary">Valider</button>
@@ -185,6 +161,30 @@
             </div>
         </form>
         <br>
+        
+        <%--
+        <script>
+            var statut = document.getElementById('statut');
+            var classe = document.getElementById('classeUser');
+            var matiere = document.getElementById('matiereUser');
+            
+            statut.addEventListener('change', function() {
+                var valeur = statut.options[statut.selectedIndex].innerHTML;
+                if (valeur === "Professeur") {
+                    classe.disabled = false;
+                    matiere.disabled = false;
+                }
+                if (valeur === "Direction") {
+                    matiere.disabled = true;
+                    classe.disabled = true;
+                }
+                if (valeur === "Elève") {
+                    matiere.disabled = true;
+                    classe.disabled = false;
+                }
+            });
+        </script>
+        --%>
         
         <!-- Importation du fichier footer.jsp -->
         <jsp:include page="footer.jsp"></jsp:include>

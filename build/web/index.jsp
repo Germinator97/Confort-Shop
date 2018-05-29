@@ -97,41 +97,28 @@
         <p style="text-align: center; font-family: verdana; font-size: 2em;">Nos services</p>
         <p style="text-align: center; font-family: verdana; font-size: 1em;">Reservé aux personnels</p>
         <div class="card-deck" style="position: relative; text-align: center; width: 80%; margin-left: 20%;">
-            <a class="btn btn-default" onclick="user();" href="magasin.jsp" style="position: relative; width: 18%;">
+            <a class="btn btn-default" href="loginMagasin.jsp" style="position: relative; width: 18%;">
                 <img src="images/customer-service.svg" style="position: relative; width: 50%;" />
                 <br><br>
                 <p style="text-align: center; font-family: verdana; font-size: 1.2em;">Magasin</p>
             </a>
-            <a class="btn btn-default" onclick="user();" href="achats.jsp" style="position: relative; width: 18%;">
+            <a class="btn btn-default" href="loginAchat.jsp" style="position: relative; width: 18%;">
                 <img src="images/clipboard.svg" style="position: relative; width: 50%;" />
                 <br><br>
                 <p style="text-align: center; font-family: verdana; font-size: 1.2em;">Achat</p>
             </a>
-            <a class="btn btn-default" onclick="user();" href="ventes.jsp" style="position: relative; width: 18%;">
+            <a class="btn btn-default" href="loginVente.jsp" style="position: relative; width: 18%;">
                 <img src="images/shopping-basket.svg" style="position: relative; width: 50%;" />
                 <br><br>
                 <p style="text-align: center; font-family: verdana; font-size: 1.2em;">Vente</p>
             </a>
-            <a class="btn btn-default" onclick="user();" href="comptabilite.jsp" style="position: relative; width: 18%;">
+            <a class="btn btn-default" href="comptabilite.jsp" style="position: relative; width: 18%;">
                 <img src="images/cash-register.svg" style="position: relative; width: 50%;" />
                 <br><br>
                 <p style="text-align: center; font-family: verdana; font-size: 1.2em;">Comptabilité</p>
             </a>
         </div>
         <br><hr style="position: relative; width: 96%; height: 3px; background-color: lightslategrey; margin-left: 2%;"><br>
-        
-        <script>
-            function user() {
-                var username = prompt("Veuillez saisir votre nom d'utilisateur");
-                var password  = prompt("Veuillez saisir votre mot de passe");
-                if ((username === "") && (password === "")) {
-                    alert("Connection réussie");
-                }
-                else {
-                    alert("Connection échouée");
-                }
-            }
-        </script>
         
         <!-- Importation du fichier footer.jsp -->
         <jsp:include page="footer.jsp"></jsp:include>

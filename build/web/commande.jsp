@@ -23,9 +23,9 @@
         <p style="text-align: center; font-family: verdana; font-size: 2em;">Ma commande</p>
         <form action="display.jsp" name="myForm" method="POST" style="position: relative; width: 60%; margin-left: 22.3%;">
             <div class="card-deck">
-                <div class="form-group" style="position: relative; margin-right: 26.5%;">
+                <div class="form-group" style="position: relative; margin-right: 28.5%;">
                     <label for="pays" style="font-size: 1.3em;">Pays<strong style="color: red;"> *</strong></label>
-                    <select name="selectPays" class="custom-select active" id="inputPays" style="position: relative; width: 182.6%;" required="required">
+                    <select name="selectPays" class="custom-select active" id="inputPays" style="position: relative; width: 198.6%;" required="required">
                         <option selected value="Cote-d-Ivoire">Côte-d'Ivoire</option>
                         <option value="Ghana">Ghana</option>
                         <option value="Togo">Togo</option>
@@ -104,26 +104,6 @@
             </div>
             <button type="submit" value="submit" name="submit" class="btn btn-primary">Submit</button>
           </form>
-        <script>
-          // Example starter JavaScript for disabling form submissions if there are invalid fields
-          (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-              // Fetch all the forms we want to apply custom Bootstrap validation styles to
-              var forms = document.getElementsByClassName('needs-validation');
-              // Loop over them and prevent submission
-              var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                  if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                  }
-                  form.classList.add('was-validated');
-                }, false);
-              });
-            }, false);
-          })();
-          </script>
         <br><br>
         <table class="table" style="position: relative; width: 63%; margin-left: 18.7%;">
             <thead>

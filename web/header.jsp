@@ -21,12 +21,9 @@
         <i class="fa fa-shopping-bag fa-1x"></i>
             Confort Shop
     </div>
-    <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Rechercher un produit" aria-label="Search">
-    </form>
-    <a href="panier.jsp" style="position: relative; margin-left: 7%;">
+    <a href="panier.jsp" style="position: relative; margin-left: 21%;">
         <div class="navbar-brand">
-            <strong>(0 article)</strong>
+            <strong>(0 articles)</strong>
             <i class="fa fa-cart-plus fa-1x"></i>
             Votre panier : 
         </div>
@@ -34,7 +31,7 @@
             €0,00
         </div>
     </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative; margin-left: 15%;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position: relative; margin-left: 18%;">
         <ul class="navbar-nav mr-auto" style="position: relative; font-size: 1.3em;">
             <li class="nav-item">
                 <a class="nav-link" href="index.jsp">Acceuil <span class="sr-only">(current)</span></a>
@@ -43,7 +40,7 @@
                 <a class="nav-link" href="produits.jsp">Produits</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" onclick="user();" href="parametres.jsp">Paramètres</a>
+                <a class="nav-link" href="loginAdministration.jsp">Paramètres</a>
             </li>
             </ul>
     </div>
