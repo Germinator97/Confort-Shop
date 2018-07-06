@@ -38,7 +38,7 @@ public class loginMagasin extends HttpServlet {
             
             String user;
             String pwd;
-            String id;
+            int id;
             
             magasin magasin = new magasin();
             RequestDispatcher rd = null;

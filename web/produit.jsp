@@ -16,7 +16,7 @@
     </head>
     
     
-    <body style="background-color: whitesmoke;">
+    <body style="font-family: 'Open Sans', sans-serif; height: 100vh; background: url('images/4.jpg') 50% fixed; background-size: cover;">
         
         <!-- Importation du fichier header.jsp -->
         <jsp:include page="header.jsp"></jsp:include>

@@ -37,7 +37,7 @@ public class loginAdministration extends HttpServlet {
             
             String user;
             String pwd;
-            String id;
+            int id;
             
             administration admin = new administration();
             RequestDispatcher rd = null;

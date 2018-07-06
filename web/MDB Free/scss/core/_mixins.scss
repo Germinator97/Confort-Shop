@@ -209,20 +209,7 @@
   font-size: $font-size;
 }
 
-// Make badge
-@mixin make-badge($name, $color) {
-  .badge-#{$name} {
-    @function set-notification-text-color($color) {
-      @if (lightness($color) > 70) {
-        @return $black; // Lighter backgorund, return dark color
-      } @else {
-        @return $white; // Darker background, return light color
-      }
-    }
-    background-color: $color !important;
-    color: set-notification-text-color($color) !important;
-  }
-}
+
 
 // Make input
 @mixin make-input($label-font-size, $label-active-font-size, $top, $prefix-font-size, $margin-left, $width) {

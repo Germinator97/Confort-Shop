@@ -14,10 +14,10 @@
         <link rel="stylesheet" href="login.css">
     </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper" style="font-family: 'Open Sans', sans-serif; height: 100vh; background: url('images/slider2.jpg') 50% fixed; background-size: cover;">
             <div class="container">
-		<h1>Bienvenue à Gestion Comptable</h1>
-                <h2>Connectez-vous pour accéder à votre tableau de bord</h2>
+                <h1 style="font-weight: bold; color: green;">Bienvenue à Confort Shop</h1>
+                <h2 style="font-weight: bold; color: black;">Connectez-vous pour accéder à votre tableau de bord</h2>
                 <br>
                 <form class="form" onsubmit="return validate();" id="connexion" name="connexion" method="post" action="loginAdministration">
                     <input type="text" placeholder="Username" id="username" name="username">
@@ -44,14 +44,16 @@
             <%
             
                 HttpSession hs = request.getSession();
-                String id;
-                if (request.getAttribute("id")!=null) {
-                    id = (String)request.getAttribute("id");
-                    if (id != null) {
+                int id = 0;
+                if (request.getAttribute("id")!= null) {
+                    id = (Integer)request.getAttribute("id");
+                    if (id != 0) {
+                        session.setAttribute("username", request.getAttribute("username"));
+                        session.setAttribute("id", id);
                         response.sendRedirect("parametres.jsp");
                     }
                     else {
-                        getServletContext().getRequestDispatcher("loginAdministration.jsp").forward(request, response);
+                        response.sendRedirect("loginAdministration.jsp");
                     }
                 }
 

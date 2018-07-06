@@ -43,8 +43,5 @@
   .carousel-item-left.active,
   .carousel-item-prev.active {
     transform: $carousel-item-transform;
-    @supports (transform-style: preserve-3d) {
-      transform: $carousel-item-transform-2;
-    }
   }
 }

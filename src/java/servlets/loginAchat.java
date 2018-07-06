@@ -37,7 +37,7 @@ public class loginAchat extends HttpServlet {
             
             String user;
             String pwd;
-            String id;
+            int id;
             
             achat achat = new achat();
             RequestDispatcher rd = null;

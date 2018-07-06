@@ -11,6 +11,10 @@
 <!-- Importation des fichiers de bootstrap -->
 <!-- Début -->
 <link href="MDB Free/css/bootstrap.css" rel="stylesheet">
+<link href="MDB Free/css/bootstrap.min.css" rel="stylesheet">
+<link href="MDB Free/css/mdb.css" rel="stylesheet">
+<link href="MDB Free/css/mdb.min.css" rel="stylesheet">
+<link href="MDB Free/css/style.css" rel="stylesheet">
 <!-- Fin -->
         
 <script defer src="fontawesome-free-5.0.9/svg-with-js/js/fontawesome-all.js"></script>

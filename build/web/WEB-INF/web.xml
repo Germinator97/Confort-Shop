@@ -16,6 +16,66 @@
         <servlet-name>loginAdministration</servlet-name>
         <servlet-class>servlets.loginAdministration</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>loginComptabilite</servlet-name>
+        <servlet-class>servlets.loginComptabilite</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modificationCompte</servlet-name>
+        <servlet-class>servlets.modificationCompte</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>informations</servlet-name>
+        <servlet-class>servlets.informations</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertionUtilisateur</servlet-name>
+        <servlet-class>servlets.insertionUtilisateur</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>utilisateurModification</servlet-name>
+        <servlet-class>servlets.utilisateurModification</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>achatModification</servlet-name>
+        <servlet-class>servlets.achatModification</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>comptabiliteModification</servlet-name>
+        <servlet-class>servlets.comptabiliteModification</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>magasinModification</servlet-name>
+        <servlet-class>servlets.magasinModification</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>venteModification</servlet-name>
+        <servlet-class>servlets.venteModification</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modificationAchat</servlet-name>
+        <servlet-class>servlets.modificationAchat</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modificationComptabilite</servlet-name>
+        <servlet-class>servlets.modificationComptabilite</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modificationMagasin</servlet-name>
+        <servlet-class>servlets.modificationMagasin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>modificationVente</servlet-name>
+        <servlet-class>servlets.modificationVente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertionCategorie</servlet-name>
+        <servlet-class>servlets.insertionCategorie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertionProduit</servlet-name>
+        <servlet-class>servlets.insertionProduit</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginMagasin</servlet-name>
         <url-pattern>/loginMagasin</url-pattern>
@@ -31,6 +91,66 @@
     <servlet-mapping>
         <servlet-name>loginAdministration</servlet-name>
         <url-pattern>/loginAdministration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginComptabilite</servlet-name>
+        <url-pattern>/loginComptabilite</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modificationCompte</servlet-name>
+        <url-pattern>/modificationCompte</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>informations</servlet-name>
+        <url-pattern>/informations</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertionUtilisateur</servlet-name>
+        <url-pattern>/insertionUtilisateur</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>utilisateurModification</servlet-name>
+        <url-pattern>/utilisateurModification</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>achatModification</servlet-name>
+        <url-pattern>/achatModification</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>comptabiliteModification</servlet-name>
+        <url-pattern>/comptabiliteModification</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>magasinModification</servlet-name>
+        <url-pattern>/magasinModification</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>venteModification</servlet-name>
+        <url-pattern>/venteModification</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modificationAchat</servlet-name>
+        <url-pattern>/modificationAchat</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modificationComptabilite</servlet-name>
+        <url-pattern>/modificationComptabilite</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modificationMagasin</servlet-name>
+        <url-pattern>/modificationMagasin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>modificationVente</servlet-name>
+        <url-pattern>/modificationVente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertionCategorie</servlet-name>
+        <url-pattern>/insertionCategorie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertionProduit</servlet-name>
+        <url-pattern>/insertionProduit</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

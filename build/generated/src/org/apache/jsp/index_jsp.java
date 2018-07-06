@@ -42,6 +42,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("\n");
       out.write("<html>\n");
@@ -61,8 +64,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "header.jsp", out, false);
       out.write("\n");
       out.write("        \n");
-      out.write("        <br><br><br>\n");
       out.write("\n");
+      out.write("        <br><br><br>\n");
       out.write("        <marquee><p style=\"font-family: verdana; font-size: 1.5em;\">Bienvenue à ConfortShop. Passer vos différentes commandes et nous serons ravis de vous les faire parvenir.</p></marquee>\n");
       out.write("        <p style=\"text-align: center; font-family: verdana; font-size: 2.5em;\">Nos produits en promo !!!</p>\n");
       out.write("        <br>\n");
@@ -140,11 +143,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </div>  \n");
       out.write("            </div>\n");
       out.write("        </div>\n");
-      out.write("        <br><hr style=\"position: relative; width: 96%; height: 3px; background-color: lightslategrey; margin-left: 2%;\"><br>\n");
+      out.write("        <br>\n");
+      out.write("        <hr style=\"position: relative; width: 96%; height: 3px; background-color: lightslategrey; margin-left: 2%;\"><br>\n");
       out.write("        <p style=\"text-align: center; font-family: verdana; font-size: 2em;\">Nos services</p>\n");
       out.write("        <p style=\"text-align: center; font-family: verdana; font-size: 1em;\">Reservé aux personnels</p>\n");
       out.write("        <div class=\"card-deck\" style=\"position: relative; text-align: center; width: 80%; margin-left: 20%;\">\n");
-      out.write("            <a class=\"btn btn-default\" href=\"loginMagasin.jsp\" style=\"position: relative; width: 18%;\">\n");
+      out.write("            <a class=\"btn btn-default\" href=\"magasin.jsp\" style=\"position: relative; width: 18%;\">\n");
       out.write("                <img src=\"images/customer-service.svg\" style=\"position: relative; width: 50%;\" />\n");
       out.write("                <br><br>\n");
       out.write("                <p style=\"text-align: center; font-family: verdana; font-size: 1.2em;\">Magasin</p>\n");
@@ -154,12 +158,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <br><br>\n");
       out.write("                <p style=\"text-align: center; font-family: verdana; font-size: 1.2em;\">Achat</p>\n");
       out.write("            </a>\n");
-      out.write("            <a class=\"btn btn-default\" href=\"loginVente.jsp\" style=\"position: relative; width: 18%;\">\n");
+      out.write("            <a class=\"btn btn-default\" href=\"ventes.jsp\" style=\"position: relative; width: 18%;\">\n");
       out.write("                <img src=\"images/shopping-basket.svg\" style=\"position: relative; width: 50%;\" />\n");
       out.write("                <br><br>\n");
       out.write("                <p style=\"text-align: center; font-family: verdana; font-size: 1.2em;\">Vente</p>\n");
       out.write("            </a>\n");
-      out.write("            <a class=\"btn btn-default\" href=\"loginComptabilite.jsp\" style=\"position: relative; width: 18%;\">\n");
+      out.write("            <a class=\"btn btn-default\" href=\"comptabilite.jsp\" style=\"position: relative; width: 18%;\">\n");
       out.write("                <img src=\"images/cash-register.svg\" style=\"position: relative; width: 50%;\" />\n");
       out.write("                <br><br>\n");
       out.write("                <p style=\"text-align: center; font-family: verdana; font-size: 1.2em;\">Comptabilité</p>\n");

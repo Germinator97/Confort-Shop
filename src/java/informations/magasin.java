@@ -5,8 +5,8 @@
  */
 package informations;
 
-import connexion.connexion;
 import java.sql.*;
+import connexion.connexion;
 
 /**
  *
@@ -24,24 +24,25 @@ public class magasin {
         
     }
     
-    public String lecture(String username, String password) {
+    public int lecture(String username, String password) {
         
-        String id = null;
+        int id = 0;
         
         try {
             Class.forName(db.getDriver());
             con = DriverManager.getConnection(db.getUrl(), db.getUser(), db.getPwd());
-            sql = "SELECT id FROM compte WHERE username='"+username+"' AND password='"+password+"' AND statut='Direction'";
+            sql = "SELECT compte.id FROM compte, magasin WHERE compte.id = magasin.compte AND compte.username = '"+username+"' AND compte.password = '"+password+"'";
             pst = con.prepareStatement(sql);
             rs = pst.executeQuery();
             while (rs.next()) {
-                id = rs.getString(1);
+                id = rs.getInt(1);
             }
             con.close();
             rs.close();
             return id;
         }
         catch (SQLException | ClassNotFoundException e) {
+            System.out.println(e.getMessage());
             return id;
         }
         

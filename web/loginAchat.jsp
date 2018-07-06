@@ -1,6 +1,6 @@
 <%-- 
-    Document   : loginAchat
-    Created on : 29 mai 2018, 15:59:56
+    Document   : loginAdministration
+    Created on : 29 mai 2018, 17:16:31
     Author     : germinator
 --%>
 
@@ -10,14 +10,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login Achat</title>
+        <title>Login Administration</title>
         <link rel="stylesheet" href="login.css">
     </head>
     <body>
-        <div class="wrapper">
+        <div class="wrapper" style="font-family: 'Open Sans', sans-serif; height: 100vh; background: url('images/slider2.jpg') 50% fixed; background-size: cover;">
             <div class="container">
-		<h1>Bienvenue à Gestion Comptable</h1>
-                <h2>Connectez-vous pour accéder à votre tableau de bord</h2>
+                <h1 style="font-weight: bold; color: green;">Bienvenue à Confort Shop</h1>
+                <h2 style="font-weight: bold; color: black;">Connectez-vous pour accéder à votre tableau de bord</h2>
                 <br>
                 <form class="form" onsubmit="return validate();" id="connexion" name="connexion" method="post" action="loginAchat">
                     <input type="text" placeholder="Username" id="username" name="username">
@@ -44,14 +44,16 @@
             <%
             
                 HttpSession hs = request.getSession();
-                String id;
-                if (request.getAttribute("id")!=null) {
-                    id = (String)request.getAttribute("id");
-                    if (id != null) {
+                int id = 0;
+                if (request.getAttribute("id")!= null) {
+                    id = (Integer)request.getAttribute("id");
+                    if (id != 0) {
+                        session.setAttribute("username", request.getAttribute("username"));
+                        session.setAttribute("id", id);
                         response.sendRedirect("achats.jsp");
                     }
                     else {
-                        getServletContext().getRequestDispatcher("loginAchat.jsp").forward(request, response);
+                        response.sendRedirect("loginAchat.jsp");
                     }
                 }
 
